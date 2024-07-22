@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TAST NOW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <div class="logo">
+                <img src="logo (2).png" alt="logo" class="logo">
+                <span>Fasult</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="test.html">Test now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img src="facebook.webp" alt="facebook" height="60px">
+        </div>
+    </nav>
+    <main>
+        <div class="welcome">
+            <div class="cont">
+                <h1>Medical Blood Analysis
+                    <span style="font-size: 20px;margin-top: -40px;display: block;margin-left: 5px;">
+                        <br>Check your blood analysis now!</span>
+                </h1>
+            </div>
+        </div>
+        <div class="container test">
+            <div class="form">
+                <h2>Enter your analysis details below..</h2>
+                <form action="" id="Form">
+                    <label for="">Name:</label>
+                    <input type="text" name="name" placeholder="Enter your name..">
+                    <br>
+                    <label for="">Age:</label>
+                    <input type="text" name="age" placeholder="Enter your age..">
+                    <br>
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male" id="male" class="gender" id="gender">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female" class="gender" id="gender">
+                    <label for="female">Female</label>
+                    <ol>
+                        <li>Complete Blood Count (CBC):</li>
+                        <label for="">White Blood Cell (WBC) Count:</label>
+                        <input type="text" name="white" placeholder="Enter your white blood cell count..">
+                        <br>
+                        <label for="">Red Blood Cell (RBC) Count:</label>
+                        <input type="text" name="red" placeholder="Enter your red blood cell count..">
+                        <br>
+                        <label for="hgb">Hemoglobin (Hgb):</label>
+                        <input type="text" name="hgb" placeholder="Enter your hemoglobin level..">
+                        <br>
+                        <label for="hct">Hematocrit (Hct):</label>
+                        <input type="text" name="hct" placeholder="Enter your hematocrit level..">
+                        <br>
+                        <label for="mcv">Mean Corpuscular Volume (MCV):</label>
+                        <input type="text" name="mcv" placeholder="Enter your MCV..">
+                        <br>
+                        <label for="platelet">Platelet Count:</label>
+                        <input type="text" name="platelet" placeholder="Enter your platelet count..">
+                        <br>
+
+                        <li>Basic Metabolic Panel (BMP):</li>
+                        <label for="glucose">Glucose:</label>
+                        <input type="text" name="glucose" placeholder="Enter your glucose level..">
+                        <br>
+                        <label for="calcium">Calcium:</label>
+                        <input type="text" name="calcium" placeholder="Enter your calcium level..">
+                        <br>
+                        <label for="sodium">Sodium:</label>
+                        <input type="text" name="sodium" placeholder="Enter your sodium level..">
+                        <br>
+                        <label for="potassium">Potassium:</label>
+                        <input type="text" name="potassium" placeholder="Enter your potassium level..">
+                        <br>
+                        <label for="bicarbonate">Bicarbonate (CO2):</label>
+                        <input type="text" name="bicarbonate" placeholder="Enter your bicarbonate level..">
+                        <br>
+                        <label for="chloride">Chloride:</label>
+                        <input type="text" name="chloride" placeholder="Enter your chloride level..">
+                        <br>
+                        <label for="bun">Blood Urea Nitrogen (BUN):</label>
+                        <input type="text" name="bun" placeholder="Enter your BUN level..">
+                        <br>
+                        <label for="creatinine">Creatinine:</label>
+                        <input type="text" name="creatinine" placeholder="Enter your creatinine level..">
+                        <br>
+
+                        <li>Lipid Panel:</li>
+                        <label for="cholesterol">Total Cholesterol:</label>
+                        <input type="text" name="cholesterol" placeholder="Enter your total cholesterol level..">
+                        <br>
+                        <label for="ldl">LDL Cholesterol:</label>
+                        <input type="text" name="ldl" placeholder="Enter your LDL cholesterol level..">
+                        <br>
+                        <label for="hdl">HDL Cholesterol:</label>
+                        <input type="text" name="hdl" placeholder="Enter your HDL cholesterol level..">
+                        <br>
+                        <label for="triglycerides">Triglycerides:</label>
+                        <input type="text" name="triglycerides" placeholder="Enter your triglycerides level..">
+                        <br>
+<!-- 
+                        <li>Liver Function Tests (LFTs):</li>
+                        <label for="alt">Alanine Aminotransferase (ALT):</label>
+                        <input type="text" name="alt" placeholder="Enter your ALT level..">
+                        <br>
+                        <label for="ast">Aspartate Aminotransferase (AST):</label>
+                        <input type="text" name="ast" placeholder="Enter your AST level..">
+                        <br>
+                        <label for="alp">Alkaline Phosphatase (ALP):</label>
+                        <input type="text" name="alp" placeholder="Enter your ALP level..">
+                        <br>
+                        <label for="bilirubin">Bilirubin:</label>
+                        <input type="text" name="bilirubin" placeholder="Enter your bilirubin level..">
+                        <br>
+                        <label for="albumin">Albumin:</label>
+                        <input type="text" name="albumin" placeholder="Enter your albumin level..">
+                        <br>  -->
+                    </ol>
+                    <input type="button" value="Submit" class="submit" onclick="checkAnalysis()">
+                </form>
+
+                <h2 style="margin-top: 30px;">Result:</h2>
+                <p id="result"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer">
+            <div class="logoFooter">
+                <img src="logo (2).png" alt="logo" class="logo">
+                <span>Fasult</span>
+            </div>
+            <img src="facebook.webp" alt="facebook" height="60px">
+        </div>
+        <h6>© 2024 Fasult. All Rights Reserved</h6>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
